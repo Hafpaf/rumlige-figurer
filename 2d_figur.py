@@ -1,4 +1,4 @@
-import matplotlib.pylab as plt
+import matplotlib.pyplot as plt
 import numpy as np
 
 #lenght of x axis
@@ -18,8 +18,8 @@ plt.plot(x, -1/3*x+0.1*np.sin(3*x)+2)
 plt.plot(x, -1/4*x +0.05*np.cos(3*x)+1.83556)
 
 #labels
-plt.xlabel('Angle [rad]')
-plt.ylabel('sin(x)')
+plt.xlabel('x-akse')
+plt.ylabel('y-akse')
 
 plt.axis('tight')
 
