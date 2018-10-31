@@ -1,13 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-#lenght of x axis
-x = np.linspace(-2, 7.25)
+#lenght of x axis between (-2, 7.25)
 xv = np.linspace(-2, 0)
 xz = np.linspace(0, 3)
 xc = np.linspace(3, 7.16606)
-#y = np.linspace(0,10) #not needed
-#plt.plot(x, np.sin(x))
 #np.meshgrid() #an addition to 3d figure
 
 '''
