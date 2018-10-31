@@ -35,7 +35,7 @@ function3 = plt.plot(xc, -1/4*xc +0.05*np.cos(3*xc)+1.83556)
 plt.xlabel('x-akse')
 plt.ylabel('y-akse')
 
-plt.axis('tight')
+#plt.axis('tight')
 
 #display
 plt.show()
