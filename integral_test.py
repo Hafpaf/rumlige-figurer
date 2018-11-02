@@ -1,12 +1,5 @@
 import scipy.integrate as integrate
-import scipy.special as special
 import numpy as np
-
-#example used on guide
-'''
-result = integrate.quad(lambda x: special.jv(2.5,x), 0, 4.5)
-print(result)
-'''
 
 #1st function
 resultz = integrate.quad(lambda x: (((-1)/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
