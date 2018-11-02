@@ -7,7 +7,8 @@ import numpy as np
 
 #1st function
 resultz = integrate.quad(lambda x: (((-1)/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
-print("1:", resultz[0])
+resultzz = np.pi * resultz[0]
+print("1:", resultzz)
 '''
 for result in resultz:
     if result > 0.0:
@@ -15,7 +16,8 @@ for result in resultz:
 '''
 #2nd function
 resultx = integrate.quad(lambda x: (((-1)/3*x+0.1*np.sin(3*x)+2)**2), 0, 3)
-print("2:", resultx[0])
+resultxx = np.pi * resultx[0]
+print("2:", resultxx)
 '''
 for result in resultx:
     if result > 0.0:
@@ -23,7 +25,8 @@ for result in resultx:
 '''
 #3rd function
 resultc = integrate.quad(lambda x: (((-1)/4*x+0.5*np.cos(3*x)+1.83556)**2), 3, 7.16606)
-print("3:", resultc[0])
+resultcc = np.pi * resultc[0]
+print("3:", resultcc)
 '''
 for result in resultc:
     if result in resultc:
@@ -35,7 +38,14 @@ for result in resultc:
 #funktion
 def function():
     resultz = integrate.quad(lambda x: ((-1/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
-    Fz = np.pi*resultz
-    return Fz
-print(function())
+    return resultz[0]
+print(resultz)
 '''
+
+'''
+def functionx():
+    if result in resultz:
+        if result > 0.1:
+        return (result)
+'''
+#print(function())
