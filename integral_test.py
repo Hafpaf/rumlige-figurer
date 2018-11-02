@@ -5,18 +5,32 @@ import numpy as np
 #result = integrate.quad(lambda x: special.jv(2.5,x), 0, 4.5)
 #print(result)
 
+#1st function
 resultz = integrate.quad(lambda x: ((-1/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
-print(resultz)
+#print(resultz)
 for result in resultz:
-    if result > 0.1:
-        print(result)
-#funktion
-#F(x)=integrate.quad(((-1/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
+    if result > 0.0:
+        print("1: ", result)
+#2nd function
+resultx = integrate.quad(lambda x: ((-1/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
+for result in resultx:
+    if result > 0.0:
+        print("2: ", result)
+#3rd function
+resultc = integrate.quad(lambda x: ((-1/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
+for result in resultc:
+    if result in resultc:
+        if result > 0.0:
+            print("3 :", result)
+
 '''
 #funktion
-def function1():
+#F(x)=integrate.quad(((-1/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
+
+#funktion
+def function():
     resultz = integrate.quad(lambda x: ((-1/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
     Fz = np.pi*resultz
     return Fz
-print(function1())
+print(function())
 '''
