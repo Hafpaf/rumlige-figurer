@@ -6,26 +6,24 @@ import numpy as np
 #print(result)
 
 #1st function
-resultz = integrate.quad(lambda x: ((-1/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
+resultz = integrate.quad(lambda x: (((-1)/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
 #print(resultz)
 for result in resultz:
     if result > 0.0:
         print("1: ", result)
 #2nd function
-resultx = integrate.quad(lambda x: ((-1/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
+resultx = integrate.quad(lambda x: (((-1)/3*x+0.1*np.sin(3*x)+2)**2), 0, 3)
 for result in resultx:
     if result > 0.0:
         print("2: ", result)
 #3rd function
-resultc = integrate.quad(lambda x: ((-1/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
+resultc = integrate.quad(lambda x: (((-1)/4*x+0.5*np.cos(3*x)+1.83556)**2), 3, 7.16606)
 for result in resultc:
     if result in resultc:
         if result > 0.0:
             print("3 :", result)
 
 '''
-#funktion
-#F(x)=integrate.quad(((-1/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
 
 #funktion
 def function():
