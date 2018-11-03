@@ -22,12 +22,19 @@ function2 = plt.plot(xz, -1/3*xz+0.1*np.sin(3*xz)+2)
 function3 = plt.plot(xc, -1/4*xc +0.05*np.cos(3*xc)+1.83556)
 '''
 
-#1st funktion F=((-1/4*x+0.1*np.sin(3*x)+2)**2), -2;0)
-resultx = np.pi*integrate.quad(lambda x: ((-1/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
-print(resultx)
+#1st function
+resultz = integrate.quad(lambda x: (((-1)/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
+resultzz = np.pi * resultz[0]
+print("1:", resultzz)
+#2nd function
+resultx = integrate.quad(lambda x: (((-1)/3*x+0.1*np.sin(3*x)+2)**2), 0, 3)
+resultxx = np.pi * resultx[0]
+print("2:", resultxx)
+#3rd function
+resultc = integrate.quad(lambda x: (((-1)/4*x+0.5*np.cos(3*x)+1.83556)**2), 3, 7.16606)
+resultcc = np.pi * resultc[0]
+print("3:", resultcc)
 
-#funktion
-#F(x)=integrate.quad(((-1/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
 
 #labels
 plt.xlabel('x-akse')
