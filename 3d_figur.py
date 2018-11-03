@@ -22,6 +22,10 @@ function2 = plt.plot(xz, -1/3*xz+0.1*np.sin(3*xz)+2)
 function3 = plt.plot(xc, -1/4*xc +0.05*np.cos(3*xc)+1.83556)
 '''
 
+#1st funktion F=((-1/4*x+0.1*np.sin(3*x)+2)**2), -2;0)
+resultx = np.pi*integrate.quad(lambda x: ((-1/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
+print(resultx)
+
 #funktion
 #F(x)=integrate.quad(((-1/4*x+0.1*np.sin(3*x)+2)**2), -2, 0)
 
